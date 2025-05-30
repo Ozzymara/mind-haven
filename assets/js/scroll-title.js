@@ -8,4 +8,3 @@ function scrollTitle() {
   setTimeout(scrollTitle, 300);
 }
 scrollTitle();
-

@@ -46,15 +46,6 @@ h3 {
   font-family: "Handlee", cursive;
 }
 
-/* Move carousel arrows further outwards */
-.carousel-control-prev {
-    left: -6px;
-}
-
-.carousel-control-next {
-    right: -6px;
-}
-
 /* Card Styling card shape, including its color, spacing, shadow, and layout.*/
 .card {
   margin-top: 20px;
@@ -125,6 +116,7 @@ h3 {
   color: #4a235a; /* Dark purple text for contrast */
 }
 
+
 /*    Custom Buttons for Resources */
 
 /* NHS Button */
@@ -177,52 +169,200 @@ h3 {
   /* You can tweak these values further if needed */
 }
 
-/*    Affirmation Text Styles */
+/*    Inspirational quotes Styles */
 
 /* Styles affirmation text to be larger and bold */
 .affirmation {
-  font-size: 1.2em;
-  /* Sets text size slightly larger than normal */
-  font-weight: bold;
-  /* Makes the text bold */
-  color: #6a0dad;
-  /* Deep purple for a soothing, visually appealing look */
+  font-size: 1.2em; /* Sets text size slightly larger than normal */
+  font-weight: bold; /* Makes the text bold */
+  color: #6a0dad; /* Deep purple for a soothing, visually appealing look */
 }
 
 /*    Heading (H2) Styling */
 
 /* Global H2 styling */
 h2 {
-  color: #4a235a !important;
-  /* Dark purple for strong contrast */
-  font-weight: bold !important;
-  /* Forces bold text */
+  color: #4a235a !important; /* Dark purple for strong contrast */
+  font-weight: bold !important; /* Forces bold text */
 }
 
 /* Specific styling for H2 inside `.container.mt-4.text-center` */
 section.container.mt-4.text-center h2 {
-  color: #4a235a !important;
-  /* Ensures dark purple */
-  font-weight: bold !important;
-  /* Keeps consistency */
+  color: #4a235a !important; /* Ensures dark purple */
+  font-weight: bold !important; /* Keeps consistency */
 }
 
 /* Adjusts paragraph font size within specific section */
 section.container.mt-4.text-center p.fs-4 {
-  font-size: 16px !important;
-  /* Ensures readable font size */
+  font-size: 16px !important; /* Ensures readable font size */
 }
 
-/*    Footer Styling */
+    <!-- Inspirational Quotes -->
+
+    <section id="quotes" class="container mt-4 text-center">
+        <h2 class="fw-bold text-primary" style="color: #4A235A; font-weight: bold;">Inspirational Quotes
+        </h2>
+
+        <p class="fs-4 text-secondary">
+            “Laughing decreases blood pressure and increases blood flow.”
+            <sub>
+                <em>~ Unknown</em>
+            </sub>
+        </p>
+
+        <p class="fs-4 text-secondary">
+            “A good laugh and a long sleep are the best cures in the doctor’s book.”
+            <sub>
+                <em>~ Irish proverb</em>
+            </sub>
+        </p>
+
+        <p class="fs-4 text-secondary">
+            “Be the reason someone smiles today.”
+            <sub>
+                <em>~ Unknown</em>
+            </sub>
+        </p>
+
+        <p class="fs-4 text-secondary">
+            “Our bodies are our gardens – our wills are our gardeners.”
+            <sub>
+                <em>~ William Shakespeare</em>
+            </sub>
+        </p>
+
+        <p class="fs-4 text-secondary">
+            “A year from now, you will wish you had started today.”
+            <sub>
+                <em>~ Karen Lamb</em>
+            </sub>
+        </p>
+    </section>
+
+    /*    Footer Styling */
 
 /* Styles the navbar at the bottom of the page */
 footer.navbar {
-  margin-bottom: 0 !important;
-  /* Removes any extra spacing below the footer */
-  border-radius: 0 !important;
-  /* Ensures footer corners are sharp, not rounded */
-  box-shadow: none !important;
-  /* Removes any shadow effect */
-  margin-top: auto !important;
-  /* Pushes the footer to the bottom of the page */
+  margin-bottom: 0 !important; /* Removes any extra spacing below the footer */
+  border-radius: 0 !important; /* Ensures footer corners are sharp, not rounded */
+  box-shadow: none !important; /* Removes any shadow effect */
+  margin-top: auto !important; /* Pushes the footer to the bottom of the page */
 }
+
+
+
+
+
+/*    Responsive Design: Small Screens */
+
+/* Styles buttons for screens smaller than 576px (mobile devices) */
+@media (max-width: 576px) {
+  #resources a.btn {
+    display: block; /* Makes each button take full width */
+    width: auto; /* Allows flexible width */
+    min-width: 160px; /* Ensures buttons aren’t too small */
+    max-width: 320px; /* Limits button width */
+    margin: 8px auto; /* Centers buttons with spacing */
+  }
+
+  /* Ensures `sub` elements inside paragraphs are block-level */
+  section.container.mt-4.text-center p.fs-4 sub {
+    display: block; /* Places each sub-element on a new line */
+    margin-top: 2px; /* Adds small spacing above */
+  }
+
+  /* Makes sure the entire page stretches to full viewport height */
+  html,
+  body {
+    min-height: 100vh; /* Ensures full screen height */
+    height: 100vh; /* Sets exact height */
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Stacks elements vertically */
+  }
+
+  /* Ensures body fills remaining space */
+  body {
+    flex: 1 0 auto; /* Prevents unwanted shrinking */
+  }
+
+  /* Positions footer at the bottom */
+  footer.navbar {
+    margin-top: auto !important; /* Pushes footer to bottom */
+  }
+
+  /* Styles background images to cover full screen */
+  .calm-bg-img {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Prevents shrinking */
+    min-width: 100vw; /* Prevents unwanted cropping */
+  }
+
+  /* Centers row elements */
+  .row {
+    justify-content: center !important; /* Aligns content horizontally */
+  }
+
+  /* Ensures columns are properly sized and centered */
+  .col-md-4 {
+    max-width: 340px; /* Limits width */
+    margin-left: auto; /* Centers column */
+    margin-right: auto; /* Centers column */
+    float: none; /* Prevents unwanted floating */
+  }
+}
+
+/*    Responsive Design: Medium Screens */
+
+/* Styles resource section for screens up to 900px (tablets & small desktops) */
+@media (max-width: 900px) {
+  #resources {
+    display: flex; /* Enables flexible layout */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers all items */
+  }
+
+  /* Ensures resource buttons are full-width */
+  #resources a.btn {
+    display: block; /* Ensures each button takes full width */
+    width: 100%; /* Full width */
+    min-width: 160px; /* Minimum size */
+    max-width: 340px; /* Prevents excessive stretching */
+    margin: 10px auto; /* Centers and spaces buttons */
+    text-align: center; /* Centers text inside buttons */
+  }
+}
+
+/*    Default Button Sizing */
+
+/* Sets button width constraints */
+#resources a.btn {
+  width: auto; /* Allows flexible sizing */
+  min-width: 160px; /* Ensures no button is too small */
+  max-width: 320px; /* Limits excessive width */
+  margin-left: 8px; /* Adds small left spacing */
+  margin-right: 8px; /* Adds small right spacing */
+}
+/*    Quotes Section Styling */
+
+/* Ensures paragraph text inside the #quotes section is black */
+section#quotes p.fs-4 {
+  color: #000 !important; /* Sets text color to black */
+}
+
+/*    Background Image Styling */
+
+/* Ensures the background image stretches fully across the page */
+.calm-bg-img {
+  position: absolute; /* Positions the image relative to the screen */
+  top: 0; /* Aligns the image at the top */
+  left: 0; /* Aligns the image at the left */
+  width: 100vw; /* Covers the full viewport width */
+  height: 100vh; /* Covers the full viewport height */
+  min-height: 100vh; /* Prevents shrinking on smaller screens */
+  min-width: 100vw; /* Prevents cropping on wider screens */
+  object-fit: cover; /* Ensures the image fully covers the background */
+  z-index: -1; /* Sends the image to the back of all other content */
+  opacity: 0.6; /* Makes the image slightly transparent */
+}
+
