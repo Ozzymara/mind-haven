@@ -87,3 +87,84 @@ h3 {
   word-spacing: -1px;
 }
 
+/*    Resource Section Styles */
+
+/* Styles the heading inside the `.container` class */
+.container h3 {
+  color: #6a0dad;
+  font-weight: bold !important; /* Deep purple color for a visually appealing heading */
+}
+
+/*    Button Styling (General) */
+
+/* Primary Button */
+.btn-primary {
+  background-color: #8e44ad; /* Violet background */
+  border: 2px solid black; /* Removes default button border */
+}
+
+/* Success Button */
+.btn-success {
+  background-color: #a569bd; /* Soft lavender background */
+  border: 2px solid black; /* Removes border */
+}
+
+/* Warning Button */
+.btn-warning {
+  background-color: #f9e79f; /* Soft yellow background */
+  border: 2px solid black; /* Removes border */
+  color: #4a235a; /* Dark purple text for contrast */
+}
+
+/*    Custom Buttons for Resources */
+
+/* NHS Button */
+.btn-nhs {
+  background-color: #007bff; /* NHS blue */
+  color: #fff; /* White text for readability */
+  border: 2px solid black !important; /* Removes default border */
+  font-weight: bold !important; /* Makes text bold */
+}
+
+/* NHS Button Hover Effect */
+.btn-nhs:hover {
+  background-color: #0056b3 !important; /* Darker NHS blue for hover state */
+}
+
+/* Samaritans Button */
+.btn-samaritans {
+  background-color: #28a745 !important; /* Green color for positivity */
+  color: #fff !important; /* White text for contrast */
+  border: 2px solid black !important; /* Removes border */
+  font-weight: bold !important; /* Makes text bold */
+}
+
+/* Samaritans Button Hover Effect */
+.btn-samaritans:hover {
+  background-color: #1e7e34 !important; /* Darker green for hover state */
+}
+
+/* Mind Matters Button */
+.btn-mindmatters {
+  background-color: #fff700 !important; /* Bright yellow for high visibility */
+  color: #218838 !important; /* Green text for contrast */
+  border: 2px solid black !important; /* Removes border */
+  font-weight: bold !important; /* Emphasizes importance */
+}
+
+/* Mind Matters Button Hover Effect */
+.btn-mindmatters:hover {
+  background-color: #ffe066 !important; /* Softer yellow for hover effect */
+}
+
+/*    Adjust Button Padding */
+
+/* Reduces horizontal padding to minimize empty space */
+.btn-nhs,
+.btn-samaritans,
+.btn-mindmatters {
+  padding-left: 18px !important; /* Adjusts left padding */
+  padding-right: 18px !important; /* Adjusts right padding */
+  /* You can tweak these values further if needed */
+}
+
