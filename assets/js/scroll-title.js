@@ -1,4 +1,4 @@
-var titleText = "💚Mind Haven";
+var titleText = " 💚Mind Haven ";
 var position = 0;
 function scrollTitle() {
   document.title =

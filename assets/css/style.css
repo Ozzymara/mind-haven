@@ -1,0 +1,23 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eedff0;
+  /* Soft lavender */
+  color: #4a235a;
+  /* Dark purple for text */
+  padding-top: 0 !important;
+  /* Remove extra space above navbar */
+  margin: 0;
+  padding-bottom: 0 !important;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main,
+.container,
+section {
+  flex: 0 0 auto;
+}
+
