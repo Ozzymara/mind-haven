@@ -37,9 +37,60 @@
 
     <!-- Navigation Bar -->
 
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+        <div class="container">
+            <!-- Website branding (logo or title) -->
+
+            <a class="navbar-brand" href="index.html" aria-label="Mind Haven Home">
+                <span style="font-family: 'Handlee', cursive; font-size: 1.5rem; color: #ffffff;">
+                    <strong>Mind Haven</strong>
+                </span>
+            </a>
+
+            <!-- Mobile menu toggle button -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- Hamburger icon for navigation -->
+            </button>
+
+            <!-- Collapsible navigation links -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Right-aligned navigation -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">💎 Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quotes">💭 Quotes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section (Main Banner) -->
 
-    <header>
+    <header class="jumbotron text-center"
+        style="background: linear-gradient(135deg, #6A0DADcc, #8E44ADcc), url('assets/images/hero-image.webp') center/cover no-repeat; color: rgb(237, 208, 238); position: relative;">
+        <!-- Background image (hidden but available for accessibility) -->
+
+        <img src="assets/images/hero-image.webp" alt="Abstract calming background for mind haven"
+            style="display:none;">
+
+        <!-- Page heading -->
+
+        <h1 style="font-family: 'Handlee', cursive; font-size: 2rem; color: #ffffff;">
+            <strong>Mind Haven</strong>
+        </h1>
+        <p style="font-family: 'Handlee', cursive; font-size: 1.6rem; color: #ffffff;">
+            Your Well-being Matters <br>~ Nurture, Heal, Flourish ~
+        </p>
     </header>
 
     <!-- Information Cards -->

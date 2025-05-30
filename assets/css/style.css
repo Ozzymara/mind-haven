@@ -21,3 +21,21 @@ section {
   flex: 0 0 auto;
 }
 
+/* Sticky navbar: sticks to the top when scrolling */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  /* higher than cards and content */
+  width: 100%;
+}
+
+/* Hero Section */
+.jumbotron {
+  background: linear-gradient(135deg, #6a0dad, #8e44ad),
+    url("../images/hero-image.png") center/cover no-repeat;
+  /* Rich purple gradient with image */
+  color: rgb(237, 208, 238);
+  padding: 50px;
+}
+
