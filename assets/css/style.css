@@ -46,6 +46,15 @@ h3 {
   font-family: "Handlee", cursive;
 }
 
+/* Move carousel arrows further outwards */
+.carousel-control-prev {
+    left: -6px;
+}
+
+.carousel-control-next {
+    right: -6px;
+}
+
 /* Card Styling card shape, including its color, spacing, shadow, and layout.*/
 .card {
   margin-top: 20px;
