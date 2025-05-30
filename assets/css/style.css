@@ -116,7 +116,6 @@ h3 {
   color: #4a235a; /* Dark purple text for contrast */
 }
 
-
 /*    Custom Buttons for Resources */
 
 /* NHS Button */
@@ -169,7 +168,7 @@ h3 {
   /* You can tweak these values further if needed */
 }
 
-/*    Inspirational quotes Styles */
+/*    Affirmation Text Styles */
 
 /* Styles affirmation text to be larger and bold */
 .affirmation {
@@ -197,49 +196,7 @@ section.container.mt-4.text-center p.fs-4 {
   font-size: 16px !important; /* Ensures readable font size */
 }
 
-    <!-- Inspirational Quotes -->
-
-    <section id="quotes" class="container mt-4 text-center">
-        <h2 class="fw-bold text-primary" style="color: #4A235A; font-weight: bold;">Inspirational Quotes
-        </h2>
-
-        <p class="fs-4 text-secondary">
-            “Laughing decreases blood pressure and increases blood flow.”
-            <sub>
-                <em>~ Unknown</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “A good laugh and a long sleep are the best cures in the doctor’s book.”
-            <sub>
-                <em>~ Irish proverb</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “Be the reason someone smiles today.”
-            <sub>
-                <em>~ Unknown</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “Our bodies are our gardens – our wills are our gardeners.”
-            <sub>
-                <em>~ William Shakespeare</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “A year from now, you will wish you had started today.”
-            <sub>
-                <em>~ Karen Lamb</em>
-            </sub>
-        </p>
-    </section>
-
-    /*    Footer Styling */
+/*    Footer Styling */
 
 /* Styles the navbar at the bottom of the page */
 footer.navbar {
@@ -248,10 +205,6 @@ footer.navbar {
   box-shadow: none !important; /* Removes any shadow effect */
   margin-top: auto !important; /* Pushes the footer to the bottom of the page */
 }
-
-
-
-
 
 /*    Responsive Design: Small Screens */
 
@@ -365,4 +318,3 @@ section#quotes p.fs-4 {
   z-index: -1; /* Sends the image to the back of all other content */
   opacity: 0.6; /* Makes the image slightly transparent */
 }
-
