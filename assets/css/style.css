@@ -177,3 +177,52 @@ h3 {
   /* You can tweak these values further if needed */
 }
 
+/*    Affirmation Text Styles */
+
+/* Styles affirmation text to be larger and bold */
+.affirmation {
+  font-size: 1.2em;
+  /* Sets text size slightly larger than normal */
+  font-weight: bold;
+  /* Makes the text bold */
+  color: #6a0dad;
+  /* Deep purple for a soothing, visually appealing look */
+}
+
+/*    Heading (H2) Styling */
+
+/* Global H2 styling */
+h2 {
+  color: #4a235a !important;
+  /* Dark purple for strong contrast */
+  font-weight: bold !important;
+  /* Forces bold text */
+}
+
+/* Specific styling for H2 inside `.container.mt-4.text-center` */
+section.container.mt-4.text-center h2 {
+  color: #4a235a !important;
+  /* Ensures dark purple */
+  font-weight: bold !important;
+  /* Keeps consistency */
+}
+
+/* Adjusts paragraph font size within specific section */
+section.container.mt-4.text-center p.fs-4 {
+  font-size: 16px !important;
+  /* Ensures readable font size */
+}
+
+/*    Footer Styling */
+
+/* Styles the navbar at the bottom of the page */
+footer.navbar {
+  margin-bottom: 0 !important;
+  /* Removes any extra spacing below the footer */
+  border-radius: 0 !important;
+  /* Ensures footer corners are sharp, not rounded */
+  box-shadow: none !important;
+  /* Removes any shadow effect */
+  margin-top: auto !important;
+  /* Pushes the footer to the bottom of the page */
+}
