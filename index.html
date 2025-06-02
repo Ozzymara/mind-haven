@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-<!-- Defines the document as an HTML5 file -->
 <html lang="en">
 <!-- Specifies English as the language for the page -->
 
@@ -8,10 +6,21 @@
     <!-- Character encoding ensures proper text display -->
     <meta charset="UTF-8">
     <!-- Viewport settings for responsive design on mobile devices -->
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <meta name="description"
-        content="A welcoming, accessible site providing mental health information, tips, and resources to support users and raise awareness.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+        rel="stylesheet"
+    >
+
+    <meta
+        name="description"
+        content="A welcoming, accessible site providing mental health information, tips, and resources to support users and raise awareness."
+    >
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <!-- Page title displayed in the browser tab -->
 
@@ -19,24 +28,37 @@
 
     <!-- Favicon (small icon shown in the browser tab) -->
 
-    <link rel="icon" type="image/jpeg" href="assets/images/green-ribbon.webp">
+    <link
+        rel="icon"
+        type="image/jpeg"
+        href="assets/images/green-ribbon.webp"
+    >
 
     <!-- Bootstrap CSS framework for styling & responsiveness -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    >
 
     <!-- Custom stylesheet for additional styling -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/scroll-title.js"></script>
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
 
+    <script src="assets/js/scroll-title.js"></script>
 </head>
 
 <body>
     <!-- Background Image -->
 
-    <img src="assets/images/calm.webp" alt="Calm nature background for mental health"
-        style="position:fixed; top:0; left:0; width:100vw; height:100vh; object-fit:cover; z-index:-1; opacity:0.35;">
+    <img
+        src="assets/images/calm.webp"
+        alt="Calm nature background for mental health"
+        style="position:fixed; top:0; left:0; width:100vw; height:100vh; object-fit:cover; z-index:-1; opacity:0.35;"
+    >
 
     <!-- Navigation Bar -->
 
@@ -44,248 +66,482 @@
         <div class="container">
             <!-- Website branding (logo or title) -->
 
-            <a class="navbar-brand" href="index.html" aria-label="Mind Haven Home">
+            <a
+                class="navbar-brand"
+                href="index.html"
+                aria-label="Mind Haven Home"
+            >
                 <span style="font-family: 'Handlee', cursive; font-size: 1.5rem; color: #ffffff;">
                     <strong>Mind Haven</strong>
                 </span>
             </a>
 
-
             <!-- Mobile menu toggle button -->
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
                 <!-- Hamburger icon for navigation -->
             </button>
 
             <!-- Collapsible navigation links -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+                class="collapse navbar-collapse"
+                id="navbarSupportedContent"
+            >
                 <ul class="navbar-nav ms-auto">
                     <!-- Right-aligned navigation -->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#resources">💎 Resources</a>
+                        <a
+                            class="nav-link"
+                            href="#quotes"
+                        >💭 Quotes</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#quotes">💭 Quotes</a>
+                        <a
+                            class="nav-link"
+                            href="#info"
+                        >ℹ️ Info</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="#resources"
+                        >💎 Resources</a>
+                    </li>
+
+                    <!-- Contact us modal -->
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="#"
+                            onclick="document.getElementById('contactus-modal').style.display='block'"
+                        >📧 Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+<!-- Contact Modal (Popup Window) -->
+<div id="contactus-modal" class="modal">
+    <div class="modal-content">
+        <!-- Close button to hide the modal -->
+        <span class="close" onclick="document.getElementById('contactus-modal').style.display='none'">&times;</span>
+        <h2 class="text-center mb-4">Contact Us</h2>
+
+        <!-- Contact form for user input -->
+        <form>
+            <!-- Name input field (Required) -->
+            <div class="mb-3">
+                <label for="contactname" class="form-label">
+                    Name <span style="color: red;">*</span>
+                </label>
+                <input type="text" class="form-control" id="contactname" placeholder="Your Name" required>
+            </div>
+
+            <!-- Email input field (Required & must be in email format) -->
+            <div class="mb-3">
+                <label for="contactemail" class="form-label">
+                    Email <span style="color: red;">*</span>
+                </label>
+                <input type="email" class="form-control" id="contactemail" placeholder="you@example.com" required>
+            </div>
+
+            <!-- Message text area for user inquiry (Required) -->
+            <div class="mb-3">
+                <label for="contactmessage" class="form-label">
+                    Message <span style="color: red;">*</span>
+                </label>
+                <textarea class="form-control" id="contactmessage" rows="3" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <!-- Submit button to send the message -->
+            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+        </form>
+    </div>
+</div>
 
     <!-- Hero Section (Main Banner) -->
 
-    <header class="jumbotron text-center"
-        style="background: linear-gradient(135deg, #6A0DADcc, #8E44ADcc), url('assets/images/hero-image.webp') center/cover no-repeat; color: rgb(237, 208, 238); position: relative;">
+    <header
+        class="jumbotron text-center"
+        style="background: linear-gradient(135deg, #6A0DADcc, #8E44ADcc), url('assets/images/hero-image.webp') center/cover no-repeat; color: rgb(237, 208, 238); position: relative;"
+    >
         <!-- Background image (hidden but available for accessibility) -->
 
-        <img src="assets/images/hero-image.webp" alt="Abstract calming background for mental health awareness"
-            style="display:none;">
+        <img
+            src="assets/images/hero-image.webp"
+            alt="Abstract calming background for mental health awareness"
+            style="display:none;"
+        >
 
-        <!-- Page heading -->
+       <!-- Site title and tagline -->
 
-        <h1 style="font-family: 'Handlee', cursive; font-size: 2rem; color: #ffffff;">
+        <h1 style="font-family: 'Handlee', cursive; font-size: 5rem; color: #ffffff;">
             <strong>Mind Haven</strong>
         </h1>
+
         <p style="font-family: 'Handlee', cursive; font-size: 1.3rem; color: #ffffff;">
-            Your Well-being Matters <br>~ Nurture, Heal, Flourish ~
+            Your Well-being Matters
+
+            <br>
+            ~ Nurture, Heal, Flourish ~
         </p>
     </header>
 
+    <!-- Inspirational Quotes Carousel -->
+
+    <div
+        id="quotes"
+        class="carousel slide"
+        data-bs-ride="carousel"
+    >
+        <div
+            id="quotes1"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="2400"
+        >
+        <!-- Quote 1 -->
+            <div class="carousel-item active">
+                <div class="card org-card bg-light text-dark mx-auto">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                            “Laughing decreases blood pressure
+
+                            <br>
+                            and increases blood flow.”
+
+                            <br>
+
+                            <em>~ Unknown</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote 2 -->
+            <div class="carousel-item">
+                <div class="card org-card bg-light text-dark mx-auto">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                            “A good laugh and a long sleep
+
+                            <br>
+                            are the best cures in the doctor’s book.”
+
+                            <br>
+
+                            <em>~ Irish proverb</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote 3 -->
+             <div class="carousel-item">
+                <div class="card org-card bg-light text-dark mx-auto">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                            “Be the reason
+
+                            <br>
+                            someone smiles today.”
+
+                            <br>
+
+                            <em>~ Unknown</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote 4 -->
+             <div class="carousel-item">
+                <div class="card org-card bg-light text-dark mx-auto">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                            “Our bodies are our gardens
+
+                            <br>
+                            our wills are our gardeners.”
+
+                            <br>
+
+                            <em>~ William Shakespeare</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote 5 -->
+             <div class="carousel-item">
+                <div class="card org-card bg-light text-dark mx-auto">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                            “A year from now,
+
+                            <br>
+                            you will wish you had started today.”
+
+                            <br>
+
+                            <em>~ Karen Lamb</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#quotes"
+            data-bs-slide="prev"
+            aria-label="Previous quote"
+        >
+            <span
+                class="carousel-control-prev-icon"
+                style="background-color: rgba(142, 68, 173); border-radius: 50%; width: 25px; height: 25px;"
+            ></span>
+        </button>
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#quotes"
+            data-bs-slide="next"
+            aria-label="Next quote"
+        >
+            <span
+                class="carousel-control-next-icon"
+                style="background-color: rgba(142, 68, 173); border-radius: 50%; width: 25px; height: 25px;"
+            ></span>
+        </button>
+    </div>
+
     <!-- Information Cards -->
 
-    <section class="container">
-        <div class="row">
-            <!-- Card 1: Mental Health -->
+    <section
+        class="info"
+        id="info"
+    >
+        <div class="container py-3 mt-1">
+            <h2 class="text-center py-1 mt-1 mb-1">Helpful Information</h2>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Mental Health</h3>
-                        <p class="card-text">
-                            "A state of complete physical, mental, and social well-being and not merely the absence of
+            <section class="container">
+                <div class="row">
+                    <!-- Card 1: Mental Health -->
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Mental Health</h3>
+
+                                <p class="card-text">
+                                    "A state of complete physical, mental, and social well-being and not merely the absence of
                             disease or infirmity."
 
-                            <em>~ <a href="https://www.who.int/about/governance/constitution#:~:text=Health%20is%20a%20state%20of,absence%20of%20disease%20or%20infirmity." target="_blank" rel="noopener noreferrer">The WHO</a></em>
-                        </p>
-                    </div>
-                </div>
-            </div>
+                                    <em>
+                                        ~
 
-            <!-- Card 2: Managing Stress -->
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Managing Stress</h3>
-
-                        <p class="card-text">
-                            Healthy coping strategies such as mindfulness, exercise, and deep breathing can
-                            effectivelyreduce stress levels.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3: Seeking Support -->
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Seeking Support</h3>
-
-                        <p class="card-text">
-                            Talking to professionals, friends, or family can provide invaluable emotional relief and
-                            guidance for mental well-being.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resource Links -->
-
-    <section id="resources" class="container text-center mt-4">
-        <h2><br>Helpful Resources</h2>
-
-        <!-- Bootstrap Cards with YouTube Videos -->
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        <div class="container mt-1">
-            <div class="row">
-                <!-- Card 1 -->
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/jLgv0E1k6hs" title="NHS Talking Therapies video"
-                                allowfullscreen="allowfullscreen"></iframe>
+                                        <a
+                                            href="https://www.who.int/about/governance/constitution#:~:text=Health%20is%20a%20state%20of,absence%20of%20disease%20or%20infirmity."
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >The WHO</a>
+                                    </em>
+                                </p>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="card-body">
-                            <h3>NHS Talking Therapies</h3>
+                    <!-- Card 2: Managing Stress -->
 
-                            <p>
-                                Struggling with stress, anxiety, or depression?<br>This video explains how NHS Talking
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Managing Stress</h3>
+
+                                <p class="card-text">
+                                    Healthy coping strategies such as mindfulness, exercise, and deep breathing can
+                            effectivelyreduce stress levels.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Seeking Support -->
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Seeking Support</h3>
+
+                                <p class="card-text">
+                                    Talking to professionals, friends, or family can provide invaluable emotional relief and
+                            guidance for mental well-being.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resource Links -->
+
+            <section
+                class="resources"
+                id="resources"
+            >
+                <div class="container py-3 mt-1">
+                    <h2 class="text-center py-1 mt-1 mb-1">Useful Resources</h2>
+
+                    <!-- Bootstrap Cards with YouTube Videos -->
+
+                    <link
+                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                        rel="stylesheet"
+                    >
+
+                    <div class="container mt-1">
+                        <div class="row">
+                            <!-- Card 1 NHS Talking Therapies-->
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/jLgv0E1k6hs"
+                                            title="NHS Talking Therapies video"
+                                            allowfullscreen="allowfullscreen"
+                                        ></iframe>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h3>NHS Talking Therapies</h3>
+
+                                        <p>
+                                            Struggling with stress, anxiety, or depression?
+
+                                            <br>
+                                            This video explains how NHS Talking
                                 Therapies can help, offering free, practical support to improve your mental health.
                                 Watch now and find out how to access the help you deserve.
-                            </p>
+                                        </p>
 
-                            <a href="https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/"
-                                class="btn btn-primary">NHS Talking Therapies</a>
-                        </div>
-                    </div>
-                </div>
+                                        <a
+                                            href="https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/"
+                                            class="btn btn-primary"
+                                        >NHS Talking Therapies</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                <!-- Card 2 -->
+                            <!-- Card 2 Samaritans-->
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/yiNydEsluLQ" title="Samaritans video"
-                                allowfullscreen="allowfullscreen"></iframe>
-                        </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/yiNydEsluLQ"
+                                            title="Samaritans video"
+                                            allowfullscreen="allowfullscreen"
+                                        ></iframe>
+                                    </div>
 
-                        <div class="card-body">
-                            <h3>Samaritans</h3>
-                            <p>
-                                Starting a new chapter in life?<br>This video shares practical tips on looking after
+                                    <div class="card-body">
+                                        <h3>Samaritans</h3>
+
+                                        <p>
+                                            Starting a new chapter in life?
+
+                                            <br>
+                                            This video shares practical tips on looking after
                                 your mental health, staying connected, and finding balance. Watch now to learn how to
                                 make this transition smoother and more fulfilling.
-                            </p>
+                                        </p>
 
-                            <a href="https://www.samaritans.org/how-we-can-help/contact-samaritan/"
-                                class="btn btn-samaritans">Samaritans</a>
-                        </div>
-                    </div>
-                </div>
+                                        <a
+                                            href="https://www.samaritans.org/how-we-can-help/contact-samaritan/"
+                                            class="btn btn-samaritans"
+                                        >Samaritans</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                <!-- Card 3 -->
+                            <!-- Card 3 Every Mind Matters -->
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/nysjq8VIwI8" title="Every Mind Matters video"
-                                allowfullscreen="allowfullscreen"></iframe>
-                        </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/nysjq8VIwI8"
+                                            title="Every Mind Matters video"
+                                            allowfullscreen="allowfullscreen"
+                                        ></iframe>
+                                    </div>
 
-                        <div class="card-body">
-                            <h3>Every Mind Matters</h3>
-                            <p>
-                                Struggling with sleep?<br>This video shares simple yet effective tips to help you rest
+                                    <div class="card-body">
+                                        <h3>Every Mind Matters</h3>
+
+                                        <p>
+                                            Struggling with sleep?
+
+                                            <br>
+                                            This video shares simple yet effective tips to help you rest
                                 better, improve your mood, and boost your concentration. Watch now to learn how small
                                 changes to your routine can lead to better sleep.
-                            </p>
-                            <a href="https://www.nhs.uk/every-mind-matters" class="btn btn-mindmatters">Every Mind
-                                Matters</a>
+                                        </p>
+
+                                        <a
+                                            href="https://www.nhs.uk/every-mind-matters"
+                                            class="btn btn-mindmatters"
+                                        >
+                                            Every Mind
+                                Matters
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
 
-    <!-- Positive Affirmations -->
-
-    <section id="quotes" class="container mt-4 text-center">
-        <h2 class="fw-bold text-primary" style="color: #4A235A; font-weight: bold;">Inspirational Quotes
-        </h2>
-
-        <p class="fs-4 text-secondary">
-            “Laughing decreases blood pressure and increases blood flow.”
-            <sub>
-                <em>~ Unknown</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “A good laugh and a long sleep are the best cures in the doctor’s book.”
-            <sub>
-                <em>~ Irish proverb</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “Be the reason someone smiles today.”
-            <sub>
-                <em>~ Unknown</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “Our bodies are our gardens – our wills are our gardeners.”
-            <sub>
-                <em>~ William Shakespeare</em>
-            </sub>
-        </p>
-
-        <p class="fs-4 text-secondary">
-            “A year from now, you will wish you had started today.”
-            <sub>
-                <em>~ Karen Lamb</em>
-            </sub>
-        </p>
-    </section>
-
-    <!-- Bootstrap JavaScript for interactive components -->
+    <!-- Bootstrap JS for interactive elements (navbar, modal, carousel) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Footer Section -->
-
+    
+    <!-- Site footer with author attribution and GitHub link -->
     <footer class="navbar navbar-expand-sm navbar-dark bg-black mt-5">
         <div class="container justify-content-center">
-            <span class="navbar-text text-white text-center w-100"
-                style="font-family: 'Lato', Arial, sans-serif;">
-                &copy; 2025 Mind Haven &mdash; OzzyMara
+            <span
+                class="navbar-text text-white text-center w-100"
+                style="font-family: 'Lato', Arial, sans-serif;"
+            >
+                &copy; 2025 Mind Haven -
+
+                <a href="https://github.com/Ozzymara/mind-haven">Ozzymara</a>
             </span>
         </div>
     </footer>
 </body>
-
 </html>
+

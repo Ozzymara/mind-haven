@@ -1,34 +1,80 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #eedff0;
-  /* Soft lavender */
-  color: #4a235a;
-  /* Dark purple for text */
-  padding-top: 0 !important;
-  /* Remove extra space above navbar */
+  font-family: Arial, sans-serif; /* Sets a clean, readable font */
+  background-color: #eedff0; /* Soft lavender background for calming aesthetics */
+  color: #4a235a; /* Dark purple text for good contrast */
+  padding-top: 0 !important; /* Removes space above navbar */
   margin: 0;
   padding-bottom: 0 !important;
-  min-height: 100vh;
+  min-height: 100vh; /* Ensures full height of viewport */
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Ensures header, main, and footer stack vertically */
 }
 
 main,
 .container,
 section {
-  flex: 0 0 auto;
+  flex: 0 0 auto; /* Prevent these from growing or shrinking */
 }
 
 /* Sticky navbar: sticks to the top when scrolling */
 .navbar {
-  position: sticky;
+  position: sticky; /* Makes navbar stick to the top while scrolling */
   top: 0;
-  z-index: 1030;
-  /* higher than cards and content */
+  z-index: 1030; /* Keeps navbar above other elements */
   width: 100%;
 }
+
+/* Popup Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background overlay */
+}
+
+/* Adjusted Modal Size */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px; /* Now explicitly limiting width */
+    max-height: 500px; /* Height remains unchanged */
+  overflow-y: auto; /* Scroll if content overflows */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+/* Close Button Fix */
+.close {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+}
+
+/* Contact Us Link Styling */
+.contactus-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Underlines on hover */
+.contactus-link:hover {
+    text-decoration: underline; 
+}
+
 
 /* Hero Section */
 .jumbotron {
