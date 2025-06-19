@@ -529,11 +529,10 @@ Report issues or suggest improvements via GitHub Issues.
 
 ## ⌨️ Code
 
-• All additional sources that complemented my learning can be found within additional [research](https://github.com/TheRickyroy/astronauts-for-autism/blob/main/documentation/research.md)  
 • The initial GitHub project was built using the [Code Institute](https://codeinstitute.net/ie/) template to start.  
 • The navigation bar, cards, buttons, and the modal form were built with [Bootstrap feature](https://getbootstrap.com/docs/5.3).  
 • The website utilises the Bootstrap framework for responsive design and styling components like the navigation bar and cards.  
-• I took inspiration from previous projections shared with us,  especially from the work of [Jeremy Greig](https://jeremygreig.github.io/CI\_Project\_1\_JG).  
+• I took inspiration from previous projects shared with us, especially from the works of [Jeremy Greig](https://jeremygreig.github.io/CI_Project_1_JG/index.html) and [Megan Otton](https://meganotton.github.io/Mental_Health_Website/).
 • Learning and parts of code were supplied by Github Copilot.
 
 ## 📝 Content
