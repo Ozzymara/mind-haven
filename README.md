@@ -64,7 +64,7 @@ As part of my portfolio project for the [Code Institute Full Stack Software Deve
 
 ## 🎯 Key Objectives
 
-● **Promote mental health awareness**: provide accessible, easy to navigate beginner-friendly information about mental health, including how to recognise common issues and manage stress.
+● **Promote mental health awareness**: provide accessible, easy-to-navigate, beginner-friendly information about mental health, including how to recognise common issues and manage stress.
 
 ● **Support and empower users**: offer a welcoming, supportive environment with concise positive messaging and affirmations to encourage users and reduce stigma around mental health issues.
 
@@ -72,17 +72,17 @@ As part of my portfolio project for the [Code Institute Full Stack Software Deve
 
 ● **Deliver a calming, accessible experience**: use a clean, calming design with a soothing colour palette, clear structure, and responsive layout to ensure the site is easy to use on all devices.
 
-● **Ensure accessibility and usability**: adhere to accessibility best practices (colour contrast, alt text, semantic html) so the site adheres to all necessary standards and accessibility requirements.
+● **Ensure accessibility and usability**: adhere to accessibility best practices (colour contrast, alt text, semantic HTML) so the site adheres to all necessary standards and accessibility requirements.
 <br>
 <hr><p align="right" dir="auto"><a href="#-mind-haven">Back To Top</a></p>
 
 # 🧐 UX Design
 
-Designing a website that prioritises mental health required a thoughtful approach that balances aesthetics, accessibility, and user experience.
+Designing a website that prioritises mental health requires a thoughtful approach that balances aesthetics, accessibility, and user experience.
 
 ## 👤 User stories
 
-The user stories for this project as well as their acceptance criteria and tasks can be found in the project board.
+The user stories for this project, as well as their acceptance criteria and tasks, can be found in the project board.
 
 🔴 **Must-haves - Site Owner’s Goal**
 
@@ -100,7 +100,7 @@ Should-haves
 
 Could-haves
 
-4. Resource Links in a Grid Layout: As an external user, I want a grid layout for external links to mental health resources styled with Bootstrap buttons to make them stand out.
+4. Resource Links in a Grid Layout: As an external user, I want a grid layout for external links to mental health resources, styled with Bootstrap buttons to make them stand out.
 5. A dynamic carousel for inspirational quotes at the top of the page. 
 6. Develop a user-friendly messaging feature with clear input fields and submission functionality.
 
@@ -109,7 +109,7 @@ Could-haves
 Colour selection carried greater significance for my project due to the specific needs of the end user and the importance of creating a visually appealing design. The chosen colours and artwork played a fundamental role in shaping a visually inviting and considerate space, ensuring that the design not only meets aesthetic expectations but also enhances user experience and well-being.
 Through extensive research, inspiration, and feedback, I carefully crafted a colour scheme that balances calmness, engagement, and accessibility. This approach incorporates elements of general colour theory alongside personal insights to create an intuitive and harmonious interface.
 
-To guarantee adherence to accessibility standards, the [Colour Contrast Checker](https://colourcontrast.cc/) (also available as a Chrome extension), [WebAIM](https://webaim.org/resources/contrastchecker/) Contrast Checker, and [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) tools were used to validate contrast levels. These tools helped to make informed decisions  with regards the final design.
+To guarantee adherence to accessibility standards, the [Colour Contrast Checker](https://colourcontrast.cc/) (also available as a Chrome extension), [WebAIM](https://webaim.org/resources/contrastchecker/) Contrast Checker, and [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) tools were used to validate contrast levels. These tools helped to make informed decisions regarding the final design.
 
 | Main Palette  | Hex     | RGB             | Foreground | Hex     | RGB             |
 | ------------- | ------- | --------------- | ---------- | ------- | --------------- |
@@ -137,7 +137,7 @@ A combination of #8848A5 (Medium Orchid) and #FFFFFF (White) fails the Web Conte
 | AAA | Fonts should be clear and legible | 4.5:1 (N/A) | 3:1 | 3:1 |
 | AA | Requires simplified language for readability | 7:1 (N/A) | 4.5:1 | 3:1 |
 
-Moreover, the chosen colours align with the website’s design reinforcing its recognition and visual appeal. The combination also offers a soft, approachable look that fits the intended audience, especially in mental health awareness contexts where calming tones matter.
+Moreover, the chosen colours align with the website’s design, reinforcing its recognition and visual appeal. The combination also offers a soft, approachable look that fits the intended audience, especially in mental health awareness contexts where calming tones matter.
 
 ## 🔠 Fonts
 
@@ -158,9 +158,9 @@ Wireframes play a crucial role in shaping a website’s architecture, ensuring a
 
 ## 🖼️ Imagery
 
-The **Mind Haven** website utilises carefully selected imagery to create a welcoming, calming, and supportive environment.  Two images were selected from [Freepik](https://www.freepik.com/), which is an online platform that provides a vast collection of royalty-free images, vectors, illustrations, icons, and templates for creative projects. For the MHA website, two images were selected: one for the main body and the second one for the jumbotron.
+The **Mind Haven** website utilises carefully selected imagery to create a welcoming, calming, and supportive environment.  Two images were selected from [Freepik](https://www.freepik.com/), which is an online platform that provides a vast collection of royalty-free images, vectors, illustrations, icons, and templates for creative projects. For the MHA website, two images were selected: one for the main body and the second for the jumbotron.
 
-Background image for main body
+Background image for the main body
 
 <details>
 <summary>Click to view background image</summary>
@@ -182,10 +182,10 @@ Original Jumbotron Image
 <summary>Click to view  finalised jumbotron Image</summary>
 <img src="documentation/readme-images/jumbotron.webp" alt=" Jumbotron Image" style="width:100%;"></details>
 <br>
-The Jumbotron image is a tranquil scene of a zen garden. The image shows a stack of smooth, dark grey stones sitting atop larger, flat stones in a shallow pool of clear, greenish-coloured water. The water’s surface reflects the surrounding greenery and light. Blurred in the background are lush, green foliage, including bamboo, and a gentle waterfall cascading over rocks. Soft, golden light streams through the foliage, giving a serene and peaceful ambiance to the image. Bokeh effects are present in the background, adding to the dreamy atmosphere.
+The Jumbotron image is a tranquil scene of a Zen garden. The image shows a stack of smooth, dark grey stones sitting atop larger, flat stones in a shallow pool of clear, greenish-coloured water. The water’s surface reflects the surrounding greenery and light. Blurred in the background are lush, green foliage, including bamboo, and a gentle waterfall cascading over rocks. Soft, golden light streams through the foliage, giving a serene and peaceful ambience to the image. Bokeh effects are present in the background, adding to the dreamy atmosphere.
 
 Purple overlay
-To ensure optimal readability while preserving the site's calming aesthetic, a purple overlay of deep and light purple was applied with an opacity of 80% transparency to the jumbotron image. Purple was selected it is commonly associated with wellness, emotional balance, and tranquillity. This style creates a smooth colour transition from deep purple to a slightly lighter shade, with a diagonal flow. This adjustment also makes the heading and subheading stand out clearly.
+To ensure optimal readability while preserving the site's calming aesthetic, a purple overlay of deep and light purple was applied with an opacity of 80% transparency to the jumbotron image. Purple was selected because it is commonly associated with wellness, emotional balance, and tranquillity. This style creates a smooth colour transition from deep purple to a slightly lighter shade, with a diagonal flow. This adjustment also makes the heading and subheading stand out clearly.
 
 **Accessibility** 
 • All images have alt text, meaning that screen readers can describe the images for users who have difficulty seeing.  
@@ -206,7 +206,7 @@ This website is designed for clarity and ease of use and is structured to encour
 <details>
 <summary>Click to view browser title</summary>
 <img src="documentation/readme-images/title.webp" alt="Browser title" style="width:100%;"></details><br>
-• The title of the website, "💚Mind Haven" appears at the top of the browser tab and at the top of the page. This makes it easy for users to recognise and understand the site's purpose.<br>
+• The title of the website, "💚Mind Haven", appears at the top of the browser tab and the top of the page. This makes it easy for users to recognise and understand the site's purpose.<br>
 
 • The favicon (the small icon next to the site title in the browser tab) is a green ribbon - a universal symbol for mental health awareness; image courtesy of [iStock Photos](https://www.istockphoto.com/). The icon helps users quickly identify the site when they have multiple tabs open.<br>
 • The scrolling title using JavaScript is a great way to subtly advocate for mental well-being. Unlike static text, a moving title grabs attention and makes the website stand out with a simple but meaningful effect.
@@ -217,8 +217,8 @@ This website is designed for clarity and ease of use and is structured to encour
 <summary>Click to view navbar</summary>
 <img src="documentation/readme-images/navbar.webp" alt="Navbar" style="width:100%;"></details><br>
 
-• The navigation bar is a menu at the top of the website that stays visible as users scroll. This feature makes it easy to move between sections without needing to scroll all the way back to the top.  
-• The navbar includes links to important sections: Resources, and Quotes. These links allow users to find information easily. This is a single page website and so the navigation links only link to anchors on the page.  
+• The navigation bar is a menu at the top of the website that stays visible as users scroll. This feature makes it easy to move between sections without needing to scroll back to the top.  
+• The navbar includes links to important sections: Resources and Quotes. These links allow users to find information easily. This is a single-page website, and so the navigation links only link to anchors on the page.  
 • On smaller screens, such as phones and tablets, the menu turns into a hamburger menu (three horizontal lines). Users can tap on it to open the menu and access different sections.
 
 ## 📧 Contact Form
@@ -228,7 +228,7 @@ This website is designed for clarity and ease of use and is structured to encour
 <img src="documentation/readme-images/contact-form.webp" alt="Navbar" style="width:100%;"></details><br>
 
 • This contact form is a crucial component of the website, allowing visitors to reach out directly to the site owner or support team to submit inquiries, feedback, or support requests without needing to send an email manually. 
-• The form consists of fields for name, email, and message, to ensure structured communication.
+• The form consists of fields for name, email, and message to ensure structured communication.
 
 ## ❇️ Hero Section
 
@@ -245,7 +245,7 @@ Original Jumbotron Image
 <br>
 
 • The hero section is the first thing users see when they land on the site. It sets the tone with a calming background image and a soft overlay (a transparent purple filter over the image) to make the text stand out and to create a peaceful and supportive feeling.  
-• The font size is large so that it is easy to read.  
+• The font size is large, so it is easy to read.  
 • This section contains a welcoming headline and a brief introduction that explains mental health.
 
 ## 💭 Inspirational Quotes Carousel
@@ -274,7 +274,7 @@ Original Jumbotron Image
 <summary>Click to view the resources section</summary>
 <img src="documentation/readme-images/resources.webp" alt="resources section" style="width:100%;"></details><br>
 
-• There are big, colourful buttons that link to trusted mental health resources, such as NHS, Samaritans, and Every Mind Matters.  
+• There are big, colourful buttons that link to trusted mental health resources, such as the NHS, Samaritans, and Every Mind Matters.  
 • These buttons are designed to stand out, making them easy to find.  
 • On mobile devices, the buttons are stacked vertically and centred, so they are simple to tap with a finger.  
 • Clicking on a button opens the resource in a new tab, ensuring that users avoid losing their place on the site.
@@ -286,7 +286,7 @@ Original Jumbotron Image
 <img src="documentation/readme-images/footer.webp" alt="Footer" style="width:100%;"></details><br>
 
 • The footer has the same style as the navigation bar for consistency.
-• The footer contains link to the author's GitHub account.
+• The footer contains a link to the author's GitHub account.
 
 ## 🕹️ Responsive Website Implementation
 
@@ -295,7 +295,10 @@ This website is fully responsive, meaning it automatically adjusts to different 
 <details>
 <summary>Click to view responsiveness
 </summary>
-<img src="documentation/readme-images/responsiveness.webp" alt="Responsiveness" style="width:100%;"></details><br>
+<img src="documentation/readme-images/responsiveness.webp" alt="Responsiveness" style="width:100%;">
+
+[Click to view live responsiveness](https://ui.dev/amiresponsive?url=https://ozzymara.github.io/mind-haven/)  
+</details><br>
 
 Implementation Details
 
@@ -389,27 +392,33 @@ The website now has no errors.
 
 <details>
 <summary>Click to view HTML validation results</summary>
-<img src="documentation/readme-images/html-val.webp" alt="HTML validation results" style="width:100%;"></details><br>
+<img src="documentation/readme-images/html-val.webp" alt="HTML validation results" style="width:100%;">
+[Click to view live HTML validation](https://validator.w3.org/nu/?doc=https://ozzymara.github.io/mind-haven/) 
+
+</details><br>
 
 When MS Copilot generated code, occasional stray elements like <span style="font-family:monospace;">&lt;/span&gt;</span> and other closing tags appeared due to the way it predicted and completed code snippets. These errors were flagged during HTML validation and were corrected in [VS Code](https://code.visualstudio.com/download).
 
 ## [✅ CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
 <details>
 <summary>Click to view CSS validation results</summary>
-<img src="documentation/readme-images/css-val.webp" alt="CSS validation results" style="width:100%;"></details><br>
+<img src="documentation/readme-images/css-val.webp" alt="CSS validation results" style="width:100%;">
+[Click to view live CSS validation]([https://validator.w3.org/nu/?doc](https://jigsaw.w3.org/css-validator/validator?uri=https://ozzymara.github.io/mind-haven/) 
 
-No errors found. 3 warnings arose from importing google fonts which are outside of the scope of this project.
+</details><br>
+
+No errors found. 3 warnings arose from importing Google fonts, which are outside of the scope of this project.
 
 ## [✅ JS Validation](https://jshint.com/)
 
-Process: One JavaScript file was validated using JSHint. N no syntax errors were found. Codes found to adhere to best practices.
+Process: One JavaScript file was validated using JSHint. No syntax errors were found. Codes found to adhere to best practices.
 
 <details>
 <summary>Click to view JS validation results</summary>
 <img src="documentation/readme-images/j-vald.webp" alt="JS validation results" style="width:80%;"></details><br>
 
 ## [✅ Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-• A Lighthouse audit was conducted using the tool on Chrome DevTools of each web page.  
+• A Lighthouse audit was conducted using the tool on Chrome DevTools for each web page.  
 • All categories 90-100 in Lighthouse.  
 • Overall, Lighthouse testing score of 94 for mobile and 99 for desktop.
 
@@ -426,7 +435,7 @@ Desktop
 
 Testing Results:
 
-In depth testing has been carried out, all results are shown below in the test results sheet:
+In-depth testing has been carried out, and all results are shown below in the test results sheet:
 
 <details>
 <summary>Click to view test grid</summary>
@@ -484,7 +493,7 @@ Ensure you have the following installed:
 Node.js (if applicable)  
 A [GitHub](https://github.com/) account  
 
-Live streaming in [VS Code](https://code.visualstudio.com/download) using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension (created by Ritwick Dey) is helpful because it automatically refreshes your browser as soon as you save your file and thereby, displaying the latest changes in real-time.
+Live streaming in [VS Code](https://code.visualstudio.com/download) using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension (created by Ritwick Dey) is helpful because it automatically refreshes your browser as soon as you save your file and thereby displaying the latest changes in real-time.
 Steps to Run Locally Using VS Code Live Server
 
 1. Install [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Extension on Open [VS Code](https://code.visualstudio.com/download).
@@ -504,11 +513,11 @@ Setup & Installation
 
 1. Open in [VS Code](https://code.visualstudio.com/download)
 2. Navigate to the project folder
-3. Run code . in the terminal to launch [VS Code](https://code.visualstudio.com/download)
+3. Run `code .` in the terminal to launch [VS Code](https://code.visualstudio.com/download)
 4. Make changes and commit
 5. Modify files as needed
-6. Stage changes: git add .
-7. Commit: git commit -m "Initial setup"
+6. Stage changes: `git add .`
+7. Commit: `git commit -m "Initial setup"`
 8. Push to GitHub
 9. git push origin main
 
@@ -533,7 +542,7 @@ Report issues or suggest improvements via GitHub Issues.
 • The navigation bar, cards, buttons, and the modal form were built with [Bootstrap feature](https://getbootstrap.com/docs/5.3).  
 • The website utilises the Bootstrap framework for responsive design and styling components like the navigation bar and cards.  
 • I took inspiration from previous projects shared with us, especially from the works of [Jeremy Greig](https://jeremygreig.github.io/CI_Project_1_JG/index.html) and [Megan Otton](https://meganotton.github.io/Mental_Health_Website/).  
-• Learning and parts of code were supplied by Github Copilot.
+• Learning and parts of the code were supplied by GitHub Copilot.
 
 ## 📝 Content
 
@@ -542,7 +551,7 @@ The icons in the footer were from Font Awesome.
 
 ## 🎥 Media
 
-The images were downloaded from [Freepik](https://www.freepik.com/) Emojis from Icons used on the website, such as the social media icons in the footer, were sourced from [Font Awesome](https://fontawesome.com/), a popular icon library. Static badges for README documentation [Shields.io](https://shields.io/badges/static-badge) & [Simple Icons](https://simpleicons.org/)
+The images were downloaded from [Freepik](https://www.freepik.com/). Emojis from Icons used on the website, such as the social media icons in the footer, were sourced from [Font Awesome](https://fontawesome.com/), a popular icon library. Static badges for README documentation [Shields.io](https://shields.io/badges/static-badge) & [Simple Icons](https://simpleicons.org/)
 
 ## 🤖 AI Implementation and Orchestration
 
@@ -561,7 +570,7 @@ The images were downloaded from [Freepik](https://www.freepik.com/) Emojis from 
 **Performance and UX Optimisation** 
 
 *   **Reflection:** AI-driven recommendations were used to enhance site performance and user experience, particularly around responsive design and accessibility best practices. 
-*   **Examples:** Copilot suggested improvements like using high-contrast color schemes, optimising font sizes for readability, and ensuring keyboard navigability for all interactive elements. 
+*   **Examples:** Copilot suggested improvements like using high-contrast colour schemes, optimising font sizes for readability, and ensuring keyboard navigability for all interactive elements. 
 
 **Automated Testing and Validation** 
 
@@ -583,8 +592,8 @@ The images were downloaded from [Freepik](https://www.freepik.com/) Emojis from 
 ## 🧡 Acknowledgements
 
 • Belinda and Andy for providing feedback on the user experience and colours based on their experience accessing mental health sites.  
-• Darren for providing feedback on design and navigation and also identifying typos.  
-• Chris for providing feedback on design and alternative layout.
+• Darren for providing feedback on design and navigation, and also identifying typos.  
+• Chris for providing feedback on the design and alternative layout.
 
 A special thank you also to:<br>
 
@@ -596,7 +605,7 @@ A special thank you also to:<br>
 
 ● Include a 'back to menu' feature so that users can avoid scrolling back to the menu.  
 ● Images for each of the information cards.  
-● Limit the site to shades of two colours only so that the site can be presented better in light and dark mode.
+● Limit the site to shades of two colours only so that the site can be presented better in light and dark modes.
 
 ## 🆕 Recent Updates
 
