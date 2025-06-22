@@ -392,9 +392,9 @@ The website now has no errors.
 
 <details>
 <summary>Click to view HTML validation results</summary>
-<img src="documentation/readme-images/html-val.webp" alt="HTML validation results" style="width:100%;">
-[Click to view live HTML validation](https://validator.w3.org/nu/?doc=https://ozzymara.github.io/mind-haven/) 
-
+<img src="documentation/readme-images/html-val.webp" alt="HTML validation results" style="width:100%;">  
+  
+[Click to view live HTML validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fozzymara.github.io%2Fmind-haven%2F) 
 </details><br>
 
 When MS Copilot generated code, occasional stray elements like <span style="font-family:monospace;">&lt;/span&gt;</span> and other closing tags appeared due to the way it predicted and completed code snippets. These errors were flagged during HTML validation and were corrected in [VS Code](https://code.visualstudio.com/download).
@@ -403,7 +403,8 @@ When MS Copilot generated code, occasional stray elements like <span style="font
 <details>
 <summary>Click to view CSS validation results</summary>
 <img src="documentation/readme-images/css-val.webp" alt="CSS validation results" style="width:100%;">
-[Click to view live CSS validation]([https://validator.w3.org/nu/?doc](https://jigsaw.w3.org/css-validator/validator?uri=https://ozzymara.github.io/mind-haven/) 
+  
+[Click to view live CSS validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fozzymara.github.io%2Fmind-haven)   
 
 </details><br>
 
